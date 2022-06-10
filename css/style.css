@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'VT323', monospace;
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.header img {
+    width: 100%;
+    margin-bottom: -4px;
+}
+.header img:hover {
+    opacity: 0.8;
+}
+
+.nav {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.nav ul li:active {
+    background-color: #fff;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 20px 10px;
+}
+.nav ul li a:hover {
+    color: #ff0000;
+}
+
+.content h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.content #imgslide {
+    width: 100%;
+}
+
+.content .albumimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.item img {
+    width: 100%;
+}
+.item img:hover {
+    opacity: 0.7;
+}
+
+.footer {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #000;
+    color: #FFF;
+}
+
+.footer .item1{
+    background-color: #343434;
+}
+
+.footer .item2{
+    background-color: #424242;
+}
+
+.footer .item3{
+    background-color: #525252;
+}
+
+.title-footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #FFF;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer .text {
+    margin: 0 0 40px 20px;
+}
+.footer h3:hover,a:hover {
+    color: #ff0000;
+}
+
+.slide {
+    text-align: center;
+}
+
+.slideshow{
+    text-align: center;
+}
+
+.slideshow img{
+    margin: 30px;
+    width: 300px;
+}
+
+.previous,.next{
+    position: relative;
+    bottom: 200px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6d6d6d;
+    color: #FFF;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+}
+
+.previous:active,.next:active {
+    background-color: #ff0000;
+}
+
+.slideshow p{
+    position: relative;
+    bottom: 30px;
+}
+
+.register{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.register .item1 img {
+    width: 100%;
+}
+
+.register h1 {
+    margin: 10px 0;
+}
+.register h1:hover,p:hover {
+    color: #ff0000;
+}
+
+.register p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.register input,select {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+.register #masv,#hoten,#email{
+    width: 50%;
+}
+
+.sothich label {
+    margin: 0 8px;
+    position: relative;
+    bottom: 2px;
+}
+
+.gioitinh label {
+    position: relative;
+    bottom: 2px;
+    margin: 0 5px;
+}
+
+.ghichu textarea{
+    border: 1px solid #ccc;
+    outline: #ccc;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+.register button {
+    padding: 10px 20px;
+    margin: 3px 0 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #6d6d6d;
+    color: #FFF;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+}
+
+.register button:active {
+    background-color: #ff0000;
+}
+
+.product #filter {
+    margin: 0 0 20px;
+}
+
+.product table {
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.product input[type = 'number']{
+    border: none;
+    opacity: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.product td b {
+    padding: 0 30px;
+}
+
+.product input[type = 'checkbox']{
+    width: 40px;
+}
+
+.product td {
+    padding: 8px 0;
+}
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
