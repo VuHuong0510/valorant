@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varlorant - Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body onload="loadImages()">
+    <div class="container">
+        <div class="header">
+            <div class="slide">
+                <img src="./images/v1.jpg" id="imgslide">
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="slideshow.html">Slideshow</a></li>
+                <li><a href="product.html">Giỏ hàng</a></li>
+                <li><a href="register.html">Đăng ký</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="register">
+                <div class="item1">
+                    <h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+                    <div class="form">
+                        <form action="" onsubmit="return dangKy(event)" id="form">
+                            <div class="masv">
+                                <p>Mã sinh viên <span class="errMessage"></span></p>
+                                <input type="text" id="masv">
+                            </div>
+                            <div class="hoten">
+                                <p>Họ và tên <span class="errMessage"></span></p>
+                                <input type="text" id="hoten">
+                            </div>
+                            <div class="email">
+                                <p>Email <span class="errMessage"></span></p>
+                                <input type="text" id="email">
+                            </div>
+                            <div class="gioitinh" id="gioitinh">
+                                <p>Giới tính <span class="errMessage"></span></p>
+                                <input type="radio" name="gioitinh">
+                                <label>Nam</label>
+                                <input type="radio" name="gioitinh">
+                                <label>Nữ</label>
+                            </div>
+                            <div class="sothich" id="sothich">
+                                <p>Sở thích <span class="errMessage"></span></p>
+                                <input type="checkbox" class="sthich">
+                                <label>Đọc sách</label>
+                                <input type="checkbox" class="sthich">
+                                <label>Du lịch</label>
+                                <input type="checkbox" class="sthich">
+                                <label>Âm nhạc</label>
+                                <input type="checkbox" class="sthich">
+                                <label>Ẩm thực</label>
+                                <input type="checkbox" class="sthich">
+                                <label>Khác</label>
+                            </div>
+                            <div class="quoctich">
+                                <p>Quốc tịch <span class="errMessage"></span></p>
+                                <select name="quoctich" id="quoctich">
+                                    <option value="0">Chọn quốc tịch</option>
+                                    <option value="1">Việt Nam</option>
+                                    <option value="2">Hoa Kì</option>
+                                    <option value="3">Pháp</option>
+                                </select>
+                            </div>
+                            <div class="ghichu">
+                                <p>Ghi chú <span class="errMessage"></span></p>
+                                <textarea name="ghichu" id="ghichu" cols="40" rows="5" style="resize: none;"></textarea>
+                            </div>
+                            <button>Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="item1">
+                    <img src="./images/character5.jpg">
+                </div>
+            </div>      
+        </div>
+
+        <div class="footer">
+            <div class="item1">
+                <h3 class="title-footer">ABOUT ME</h3>
+                <div class="text">
+                    <p>Name: Vu Nguyen Huong</p>
+                    <p>Age: 19</p>
+                    <p>Education: FPT College</p>
+                </div>
+            </div>
+            <div class="item2">
+                <h3 class="title-footer">CONTACT</h3>
+                <div class="text">
+                    <p>Facebook: <a href="https://facebook.com/VuNguyenHuong.Official" target="_blank">Vũ Nguyên Hướng</a></p>
+                    <p>Zalo: 0395.080.513</p>
+                    <p>Email: huongvnph27229@fpt.edu.vn</p>
+                </div>
+            </div>
+            <div class="item3">
+                <h3 class="title-footer">FANPAGE</h3>
+                <div class="text">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FV%25C5%25A9-Nguy%25C3%25AAn-H%25C6%25B0%25E1%25BB%259Bng-109614187276239&tabs=timeline&width=340&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=695224691594206" width="250" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    
+</body>
+<script src="./js/register.js"></script>
+</html>
