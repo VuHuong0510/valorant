@@ -80,7 +80,7 @@ function dangKy(e){
 
     if(checkMasv & checkHoten & checkEmail & checkGT & checkSothich & checkQT & checkGhiChu){
         document.getElementById('form').reset();
-        swal("Here's a message!", "It's pretty, isn't it?");
+        alert('Đăng ký thành công!');
         checkMasv = checkHoten = checkEmail = checkGT = checkSothich = checkQT = checkGhiChu = false
     }
 }
