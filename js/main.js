@@ -4,7 +4,7 @@ var index = 0
 function loadImages(){
     document.getElementById('imgslide').src = arr[index]
     index++
-    if(index == arr.length){
+    if(index == arr.length-1){
         index = 0
     }
     setTimeout('loadImages()',1500)
