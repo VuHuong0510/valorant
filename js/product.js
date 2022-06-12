@@ -86,7 +86,7 @@ function filters(){
             }
         }
         tongTiens.innerHTML = '0'
-        checkInput.innerHTML = '0'
+        checkInput[i].value = 0
         thanhTiens[i].innerHTML = '0'
     }
 }
