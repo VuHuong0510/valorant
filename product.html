@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varlorant - Product</title>
+    <title>Valorant - Product</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/favicon.ico">
 </head>
@@ -13,6 +13,7 @@
         <div class="header">
             <div class="slide">
                 <img src="./images/v1.jpg" id="imgslide">
+                <p id="titleslide"></p>
             </div>
         </div>
         <div class="nav">
@@ -27,7 +28,7 @@
         <div class="content" align="center">
             <div class="product">
                 <h2>BÁN HÀNG</h2>
-                <select name="mucgia" id="filter">
+                <select name="mucgia" id="filter" onchange="filters()">
                     <option value="0">Chọn mức giá</option>
                     <option value="1">Dưới 100</option>
                     <option value="2">Từ 100 - 500</option>
@@ -35,67 +36,66 @@
                 </select>
                 <table>
                     <tr>
-                        <td><input type="checkbox" id="checkall"></td>
+                        <td><input type="checkbox" id="checkall" onclick="checkAlls()"></td>
                         <td><b>Hàng hóa</b></td>
                         <td><b>Đơn giá</b></td>
                         <td><b>Số lượng</b></td>
                         <td><b>Thành tiền</b></td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class="check"></td>
-                        <td>iPhone 9</td>
-                        <td>700</td>
+                        <td><input type="checkbox" class="check" onclick="check()"></td>
+                        <td class="nameproduct">iPhone 9</td>
+                        <td class="cost">700</td>
                         <td><input type="number" min="0" value="0" step="1" disabled></td>
-                        <td></td>
+                        <td class="thanhtien">0</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class="check"></td>
-                        <td>SamSung</td>
-                        <td>400</td>
+                        <td><input type="checkbox" class="check" onclick="check()"></td>
+                        <td class="nameproduct">SamSung</td>
+                        <td class="cost">400</td>
                         <td><input type="number" min="0" value="0" step="1" disabled></td>
-                        <td></td>
+                        <td class="thanhtien">0</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class="check"></td>
-                        <td>Nokia</td>
-                        <td>100</td>
+                        <td><input type="checkbox" class="check" onclick="check()"></td>
+                        <td class="nameproduct">Nokia</td>
+                        <td class="cost">100</td>
                         <td><input type="number" min="0" value="0" step="1" disabled></td>
-                        <td></td>
+                        <td class="thanhtien">0</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class="check"></td>
-                        <td>Sony Xperia</td>
-                        <td>450</td>
+                        <td><input type="checkbox" class="check" onclick="check()"></td>
+                        <td class="nameproduct">Sony Xperia</td>
+                        <td class="cost">450</td>
                         <td><input type="number" min="0" value="0" step="1" disabled></td>
-                        <td></td>
+                        <td class="thanhtien">0</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class="check"></td>
-                        <td>Motorola</td>
-                        <td>180</td>
+                        <td><input type="checkbox" class="check" onclick="check()"></td>
+                        <td class="nameproduct">Motorola</td>
+                        <td class="cost">180</td>
                         <td><input type="number" min="0" value="0" step="1" disabled></td>
-                        <td></td>
+                        <td class="thanhtien">0</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class="check"></td>
-                        <td>Oppo</td>
-                        <td>600</td>
+                        <td><input type="checkbox" class="check" onclick="check()"></td>
+                        <td class="nameproduct">Oppo</td>
+                        <td class="cost">600</td>
                         <td><input type="number" min="0" value="0" step="1" disabled></td>
-                        <td></td>
+                        <td class="thanhtien">0</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class="check"></td>
-                        <td>bPhone</td>
-                        <td>90</td>
+                        <td><input type="checkbox" class="check" onclick="check()"></td>
+                        <td class="nameproduct">bPhone</td>
+                        <td class="cost">90</td>
                         <td><input type="number" min="0" value="0" step="1" disabled></td>
-                        <td></td>
+                        <td class="thanhtien">0</td>
                     </tr>
                     <tfoot>
                         <th colspan="4">Tổng</th>
-                        <th><span class="tongtien"></span></th>
+                        <th><span id="tongtien">0</span></th>
                     </tfoot>
                 </table>
-                
             </div>
         </div>
 
