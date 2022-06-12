@@ -21,3 +21,12 @@ function previous(){
     document.getElementById('image').src = arr[index]
     document.getElementById('caption').innerText = 'Ảnh ' + (index + 1) + '/' + (arr.length)
 }
+
+var imgInterval
+function start(){
+    imgInterval = setInterval('next()',1500)
+}
+
+function pause(){
+    clearInterval(imgInterval)
+}
