@@ -70,8 +70,8 @@ function dangKy(e){
     if(ghiChu.value.length == 0){
         errMessage[6].innerHTML = '(*)'
         errMessage[6].style.color = 'red'
-    }else if(ghiChu.value.length < 100){
-        errMessage[6].innerHTML = 'You must feedback > 100 characters!'
+    }else if(ghiChu.value.length > 200){
+        errMessage[6].innerHTML = 'Vui lòng nhập dưới 200 kí tự!'
         errMessage[6].style.color = 'red'
     }else{
         errMessage[6].innerHTML = ''
